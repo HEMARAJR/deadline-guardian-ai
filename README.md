@@ -117,6 +117,42 @@ NEXT_PUBLIC_GEMINI_API_KEY=
 
 ---
 
+Architecture Diagram
+
+                    +-------------------------+
+                    |        User             |
+                    +------------+------------+
+                                 |
+                                 v
+                    +-------------------------+
+                    |      Next.js Frontend   |
+                    +------------+------------+
+                                 |
+             +-------------------+-------------------+
+             |                   |                   |
+             v                   v                   v
+     Firebase Auth        Gemini API         Firestore Database
+             |                   |                   |
+             +-------------------+-------------------+
+                                 |
+                                 v
+                    +-------------------------+
+                    |  Risk Prediction Engine |
+                    +-------------------------+
+                                 |
+                                 v
+                    +-------------------------+
+                    | Future Simulator Engine |
+                    +-------------------------+
+                                 |
+                                 v
+                    +-------------------------+
+                    |  Rescue Plan Generator  |
+                    +-------------------------+
+                                 |
+                                 v
+                    Google Cloud Run Deployment
+
 # Deployment
 
 This project is deployed using **Google Cloud Run**.
