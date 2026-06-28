@@ -1,173 +1,141 @@
 # 🛡️ Deadline Guardian AI
 
-> **"Predict missed deadlines before they happen."**
+> **Predict Missed Deadlines Before They Happen**
 
-An AI Chief-of-Staff platform that listens to voice commands, calculates deadline risk in real-time, simulates future outcomes, and generates emergency rescue plans.
-
-Built for hackathons. Production-quality code.
+Deadline Guardian AI is an AI-powered Chief-of-Staff platform that predicts project risks before deadlines are missed. It analyzes workload, estimates success probability, simulates future outcomes, and generates AI-powered rescue plans to help users complete work on time.
 
 ---
 
-## 🚀 Quick Start
+## 🌐 Live Demo
+
+**Cloud Run Deployment**
+
+https://deadline-guardian-ai-314376660603.asia-south1.run.app
+
+---
+
+## 📂 GitHub Repository
+
+(Add your GitHub repository URL here)
+
+---
+
+# Problem Statement
+
+Students, professionals, and teams often realize they will miss deadlines only when it is too late. Existing task managers only remind users—they don't predict failure or suggest recovery strategies.
+
+Deadline Guardian AI solves this by forecasting deadline risks before they occur and recommending personalized rescue plans.
+
+---
+
+# Features
+
+* AI-powered deadline risk prediction
+* Future outcome simulation
+* Emergency rescue planning
+* Google Authentication
+* Voice command support
+* Interactive dashboard
+* Analytics and progress tracking
+* Firebase Authentication
+* Firestore database
+* Google Cloud deployment
+
+---
+
+# Tech Stack
+
+### Frontend
+
+* Next.js 14
+* React
+* TypeScript
+* Tailwind CSS
+* Framer Motion
+
+### Backend
+
+* Next.js API Routes
+
+### AI
+
+* Google Gemini API
+
+### Database
+
+* Firebase Firestore
+
+### Authentication
+
+* Firebase Authentication
+
+### Cloud
+
+* Google Cloud Run
+
+---
+
+# Project Structure
+
+```text
+app/
+components/
+hooks/
+lib/
+public/
+types/
+agents/
+prompts/
+```
+
+---
+
+# Installation
 
 ```bash
-# 1. Clone the repo
-git clone <your-repo-url>
+git clone <repository-url>
+
 cd deadline-guardian-ai
 
-# 2. Install dependencies
 npm install
 
-# 3. Configure environment
-cp .env.local.example .env.local
-# Edit .env.local with your keys (see below)
-
-# 4. Run development server
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000)
+Create a `.env.local` file with:
 
----
-
-## ⚙️ Environment Variables
-
-Create `.env.local`:
-
-```env
-# Firebase (from Firebase Console → Project Settings)
-NEXT_PUBLIC_FIREBASE_API_KEY=your_key
-NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
-NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
-NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
-NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
-NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
-
-# Gemini AI (from Google AI Studio → aistudio.google.com)
-GEMINI_API_KEY=your_gemini_key
-NEXT_PUBLIC_GEMINI_API_KEY=your_gemini_key
+```
+NEXT_PUBLIC_FIREBASE_API_KEY=
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=
+NEXT_PUBLIC_FIREBASE_APP_ID=
+GEMINI_API_KEY=
+NEXT_PUBLIC_GEMINI_API_KEY=
 ```
 
 ---
 
-## 🔧 Firebase Setup
+# Deployment
 
-1. Go to [Firebase Console](https://console.firebase.google.com)
-2. Create a new project
-3. Enable **Authentication** → Google provider
-4. Enable **Firestore Database** (start in test mode)
-5. Copy config to `.env.local`
-6. Deploy security rules: `firebase deploy --only firestore:rules`
+This project is deployed using **Google Cloud Run**.
 
 ---
 
-## 🤖 Gemini API Setup
+# Future Enhancements
 
-1. Go to [Google AI Studio](https://aistudio.google.com)
-2. Create an API key
-3. Add to `.env.local` as `GEMINI_API_KEY`
-
-> **Note:** The app works in demo mode without API keys — AI responses fall back to intelligent local calculations.
-
----
-
-## 📁 Project Structure
-
-```
-deadline-guardian-ai/
-├── app/
-│   ├── page.tsx                 # Landing page
-│   ├── layout.tsx               # Root layout
-│   ├── globals.css              # Global styles
-│   ├── dashboard/               # Main dashboard
-│   ├── command-center/          # Voice AI interface
-│   ├── simulator/               # Future simulation
-│   ├── rescue/                  # Emergency rescue
-│   ├── analytics/               # Analytics
-│   ├── settings/                # Settings
-│   └── api/
-│       ├── chat/route.ts        # Voice command API
-│       ├── risk/route.ts        # Risk prediction API
-│       ├── future/route.ts      # Simulation API
-│       ├── rescue/route.ts      # Rescue plan API
-│       └── breakdown/route.ts   # Task breakdown API
-├── agents/
-│   ├── plannerAgent.ts          # Task breakdown
-│   ├── riskAgent.ts             # Risk prediction
-│   ├── futureAgent.ts           # Future simulation
-│   └── rescueAgent.ts           # Rescue planning
-├── components/
-│   ├── Sidebar.tsx
-│   ├── Navbar.tsx
-│   ├── TaskCard.tsx
-│   ├── VoiceInterface.tsx
-│   ├── RiskMeter.tsx
-│   ├── FutureTimeline.tsx
-│   ├── RescuePlan.tsx
-│   └── AnalyticsChart.tsx
-├── hooks/
-│   ├── useAuth.ts               # Firebase auth
-│   ├── useVoice.ts              # Web Speech API
-│   └── useTasks.ts              # Task CRUD
-├── lib/
-│   ├── firebase.ts              # Firebase init
-│   ├── firestore.ts             # Firestore operations
-│   ├── gemini.ts                # Gemini AI client
-│   └── store.ts                 # Zustand state
-├── prompts/
-│   ├── taskBreakdown.ts
-│   ├── riskPrediction.ts
-│   ├── futureSimulation.ts
-│   ├── rescuePlanning.ts
-│   └── voiceCommand.ts
-└── types/
-    └── index.ts                 # TypeScript types
-```
+* Team collaboration
+* Calendar integration
+* Email reminders
+* Mobile application
+* AI productivity coach
+* Smart scheduling
+* Slack integration
+* Microsoft Teams integration
 
 ---
 
-## ✨ Features
+# License
 
-| Feature | Description |
-|---------|-------------|
-| 🎙️ **Voice Commands** | Speak tasks naturally — AI extracts deadline, effort, category |
-| 📊 **Risk Prediction** | Real-time success probability with AI reasoning |
-| ⚡ **Future Simulator** | "What if I delay 24h?" — visual scenario comparison |
-| 🚨 **Rescue Planner** | Emergency hour-by-hour rescue schedules |
-| 📈 **Analytics** | Weekly trends, risk distribution, completion rates |
-| 🔐 **Google Auth** | One-click sign in with Firebase |
-| 💾 **Cloud Sync** | All data persisted to Firestore |
-
----
-
-## 🏆 Tech Stack
-
-- **Next.js 14** App Router
-- **TypeScript** — fully typed
-- **Tailwind CSS** — dark futuristic UI
-- **Firebase** — Auth + Firestore
-- **Gemini 1.5 Flash** — AI reasoning
-- **Framer Motion** — animations
-- **Zustand** — state management
-- **Recharts** — data visualization
-- **Web Speech API** — voice recognition
-
----
-
-## 🚢 Deploy to Firebase Hosting
-
-```bash
-npm install -g firebase-tools
-firebase login
-firebase init hosting
-npm run build
-firebase deploy
-```
-
----
-
-## 📄 License
-
-MIT — Free to use, modify, and distribute.
-
-Built with ❤️ for hackathons.
+MIT License
