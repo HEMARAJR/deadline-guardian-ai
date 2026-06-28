@@ -14,6 +14,8 @@ const firebaseConfig = {
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID || '1:123:web:abc',
 };
 
+console.log("Firebase Config:", firebaseConfig);
+
 // Prevent duplicate initialization in Next.js hot reloads
 const app = getApps().length > 0 ? getApp() : initializeApp(firebaseConfig);
 
