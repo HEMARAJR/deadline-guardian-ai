@@ -6,15 +6,13 @@ import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY || 'demo-key',
-  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN || 'demo.firebaseapp.com',
-  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID || 'deadline-guardian-demo',
-  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET || 'demo.appspot.com',
-  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID || '123456',
-  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID || '1:123:web:abc',
+  apiKey: "AIzaSyA75V8eben1TTWKLZbe820jF9pLxL7xBw4",
+  authDomain: "deadline-guardian-ai-demo.firebaseapp.com",
+  projectId: "deadline-guardian-ai-demo",
+  storageBucket: "deadline-guardian-ai-demo.firebasestorage.app",
+  messagingSenderId: "8046651296",
+  appId: "1:8046651296:web:3bff6f92e72dbccc2ae6c5",
 };
-
-console.log("Firebase Config:", firebaseConfig);
 
 // Prevent duplicate initialization in Next.js hot reloads
 const app = getApps().length > 0 ? getApp() : initializeApp(firebaseConfig);
