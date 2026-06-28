@@ -16,7 +16,7 @@ https://deadline-guardian-ai-314376660603.asia-south1.run.app
 
 ## 📂 GitHub Repository
 
-(Add your GitHub repository URL here)
+https://github.com/HEMARAJR/deadline-guardian-ai
 
 ---
 
